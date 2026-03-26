@@ -1,9 +1,101 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=https://summermadefresh.com">
-  </head>
-  <body>
-    <p>Redirecting...</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+  if (sessionStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "index.html";
+  }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | Summer Made Fresh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="nav-inner">
+        <div class="brand"><a href="home.html">Summer Made Fresh</a></div>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <div class="nav-links">
+          <a href="home.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <!-- removed MEDIA link -->
+          <a href="book-an-event.html">BOOK AN EVENT</a>
+          <a href="catering.html">CONTACT US</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero home"></section>
+
+    <h1 class="big-text">Sip. Snack. Smile!!</h1>
+
+    <section class="content">
+      <h2>About us.</h2>
+      <p>Summer Made Fresh is a local, family-owned food trailer built around one simple idea: great food and refreshing lemonade made with care. We’re fully insured and proud to serve our community with mouthwatering bites, fresh drinks, and a friendly atmosphere wherever we go. Whether it’s a small gathering or a big event, we bring the same energy, good vibes, and attention to quality every time. Our goal is to make every stop feel like summer — fresh, fun, and welcoming for everyone. From quick refreshments to delicious eats, Summer Made Fresh is here to make your day better.</p>
+
+      <!-- Social Media Buttons -->
+      <div class="home-buttons" style="margin-top:20px; text-align:center;">
+        <a href="https://www.instagram.com/summermadefresh/" target="_blank" style="display:inline-block; padding:12px 24px; margin-right:12px; background:#E4405F; color:#fff; border-radius:8px; text-decoration:none; font-weight:600;">Instagram</a>
+        <a href="https://www.facebook.com/SummerMadeFreshLLC" target="_blank" style="display:inline-block; padding:12px 24px; background:#1877F2; color:#fff; border-radius:8px; text-decoration:none; font-weight:600;">Facebook</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="home-carousel" aria-roledescription="carousel" tabindex="0">
+        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+        <div class="carousel-track">
+          <div class="carousel-item">
+            <img src="images/lemonade.png" alt="Lemonade" loading="lazy">
+            <div class="feature-body">
+              <div class="feature-title">Lemonade</div>
+              <div class="feature-desc">A cup of refreshing lemonade always made fresh to order with fresh fruit, no syurps or artifical flavorings. We offer Classic, Rasberry, Strawberry, Blackberry, Watermelon and Cucumber mint flavors. Our beverages are fully customizable.</div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/chicken and fries.png" alt="Chicken and fries">
+            <div class="feature-body">
+              <div class="feature-title">Chicken and fries</div>
+              <div class="feature-desc">Signature crispy chicken and served with a side of salty savory fries.</div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/empanana.png" alt="Empanadas" loading="lazy">
+            <div class="feature-body">
+              <div class="feature-title">Empanadas</div>
+              <div class="feature-desc">A great choice of food with beef, chicken, and cheese flavors, mix and match how you want.</div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/potato tornado.png" alt="Potato Tornado" loading="lazy">
+            <div class="feature-body">
+              <div class="feature-title">Potato Tornado</div>
+              <div class="feature-desc">Seasoned spiral potatoes fried to golden perfection.</div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots" aria-hidden="false"></div>
+      </div>
+    </section>
+
+  </div> <!-- end wrapper -->
+
+  <!-- Image Modal -->
+  <div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Enlarged Image">
+  </div>
+
+  <footer>
+    <p class="footer-slogan">Sip. Snack. Smile!! Summer Made Fresh and based in Morris County</p>
+    <small class="footer-copy">&copy; 2026 Summer Made Fresh — All Rights Reserved.</small>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
