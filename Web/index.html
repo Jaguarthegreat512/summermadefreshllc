@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summer Made Fresh</title>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+
+      if (password === "smf2023") {
+        sessionStorage.setItem("loggedIn", "true");
+        window.location.href = "home.html";
+      } else {
+        alert("Wrong password!");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h2>Enter Password</h2>
+
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Enter</button>
+</body>
+</html>

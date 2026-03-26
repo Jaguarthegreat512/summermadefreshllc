@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+  if (sessionStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "index.html";
+  }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery | Summer Made Fresh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="nav-inner">
+        <div class="brand"><a href="home.html">Summer Made Fresh</a></div>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <div class="nav-links">
+          <a href="home.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <!-- <a href="locations.html">WHERE WE ARE / MAP</a> -->
+          <a href="gallery.html">GALLERY</a>
+          <a href="book-an-event.html">BOOK AN EVENT</a>
+          <a href="catering.html">CONTACT US</a>
+        </div>
+        
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Gallery</h1>
+      <p>Coming soon...</p>
+    </section>
+<!--
+    <section class="content">
+      <h2>Gallery</h2>
+      <div class="gallery-placeholder" style="text-align:center; padding:26px;">
+        <p style="margin:0 0 12px; color:rgba(36,73,47,0.85);">Our gallery is being refreshed — check back soon.</p>
+        <img src="images/foodtruck.jfif" alt="Food truck" style="width:320px; max-width:90%; border-radius:12px; box-shadow:0 10px 30px rgba(34,41,30,0.12);">
+      </div>
+    </section>
+    -->
+
+  </div> <!-- end wrapper -->
+
+  <footer>
+    <p class="footer-slogan">Sip. Snack. Smile!! Summer Made Fresh and based in Morris County</p>
+    <small class="footer-copy">&copy; 2026 Summer Made Fresh — All Rights Reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
