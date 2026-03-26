@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+  if (sessionStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "index.html";
+  }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find Us | Summer Made Fresh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="nav-inner">
+        <div class="brand"><a href="home.html">Summer Made Fresh</a></div>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <div class="nav-links">
+          <a href="home.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <!-- <a href="locations.html">WHERE WE ARE / MAP</a> -->
+          <!-- <a href="gallery.html">GALLERY</a> -->
+          <a href="book-an-event.html">BOOK AN EVENT</a>
+          <a href="catering.html">CONTACT US</a>
+        </div>
+        
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Our Locations</h1>
+      <p>Find us at these great spots around Morris County.</p>
+      <p class="hero-cta"><a class="btn" href="catering.html">Plan an Event</a></p>
+    </section>
+
+    <section class="content">
+      <h2>Where to Find Us</h2>
+      <p>We operate in various locations to serve you better. Check our interactive map below for current and planned appearances.</p>
+
+      <div class="map-embed" style="margin-top:16px;">
+        <!-- Replace the src with your Google My Maps embed URL when ready -->
+        <iframe id="mymap" src="https://www.google.com/maps/d/u/4/embed?mid=1zDCo8kY_HSdEI7R5jB4z4KmKVR-SHnQ&ehbc=2E312F&noprof=1" width="100%" height="480" style="border:0; border-radius:8px; min-height:300px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <style>
+      @media (max-width: 640px) {
+        .map-embed iframe { height: 300px !important; }
+      }
+    </style>
+
+  </div> <!-- end wrapper -->
+
+  <footer>
+    <p class="footer-slogan">Sip. Snack. Smile!! Summer Made Fresh and based in Morris County</p>
+    <small class="footer-copy">&copy; 2026 Summer Made Fresh — All Rights Reserved.</small>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
