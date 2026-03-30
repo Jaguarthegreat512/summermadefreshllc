@@ -286,3 +286,4 @@ a:hover { color: var(--accent); }
     max-width: 100%;
   }
 }
+/* fix for admin toolbar on mobile */
