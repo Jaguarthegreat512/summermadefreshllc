@@ -1,8 +1,8 @@
 :root {
-  --bg-cream: #f5ede0;
+  --bg-cream: #ffe656;
   --leaf: #2f7a45;
   --leaf-dark: #1f5a33;
-  --sun: #ffd066;
+  --sun: #ffffff;
   --sky: #87cde8;
   --sand: #f2e7d5;
   --accent: #ff7f50;
@@ -24,7 +24,7 @@ nav {
   top: 0;
   z-index: 1000;
   background: var(--leaf-dark);
-  color: var(--sun);
+  color: rgba(255,208,102,0.95);
   padding: 16px 18px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   border: 3px solid var(--sun);
@@ -32,13 +32,13 @@ nav {
   margin: 0 5% 0 5%;
   border-radius: 0 0 12px 12px;
 }
-.brand a { color: var(--sun); font-family: 'Playfair Display', serif; font-size: 1.25rem; text-decoration: none; font-weight: 700; }
+.brand a { color: rgba(255,208,102,0.95); font-family: 'Playfair Display', serif; font-size: 1.25rem; text-decoration: none; font-weight: 700; }
 .nav-links { display: flex; gap: 8px; align-items: center; }
-.nav-links a { margin: 0 6px; text-decoration: none; color: var(--sun); font-weight: 600; font-size: 0.95rem; text-transform: uppercase; padding: 8px 14px; border-radius: 8px; transition: background 0.18s, transform 0.12s; }
-.nav-links a:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); color: var(--sun); }
+.nav-links a { margin: 0 6px; text-decoration: none; color: rgba(255,208,102,0.95); font-weight: 600; font-size: 0.95rem; text-transform: uppercase; padding: 8px 14px; border-radius: 8px; transition: background 0.18s, transform 0.12s; }
+.nav-links a:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); color: rgba(255,208,102,0.95); }
 
 /* Responsive menu toggle (mobile) */
-.menu-toggle { display: none; background: none; border: none; font-size: 1.6rem; color: var(--sun); cursor: pointer; }
+.menu-toggle { display: none; background: none; border: none; font-size: 1.6rem; color: rgba(255,208,102,0.95); cursor: pointer; }
 
 /* Admin toggle in nav */
 .admin-btn { background: transparent; border: 1px solid rgba(0,0,0,0.06); color: var(--leaf-dark); padding: 6px 10px; border-radius: 8px; cursor: pointer; font-weight: 600; }
@@ -81,9 +81,10 @@ footer {
   border-radius: 12px 12px 0 0;
   box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
   border: 3px solid var(--sun);
+  text-align: center;
 }
 .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
-.footer-slogan { color: var(--sun); font-family: 'Playfair Display', serif; font-size: 1.05rem; margin: 0; }
+.footer-slogan { color: rgba(255,208,102,0.95); font-family: 'Playfair Display', serif; font-size: 1.05rem; margin: 0; }
 .footer-copy { color: rgba(255,208,102,0.95); display: block; margin-top: 8px; }
 
 /* Gallery */
@@ -146,7 +147,7 @@ a:hover { color: var(--accent); }
 
 
 .hero.home {
-  background-image: url('images/unnamed.jpg');
+  background-image: url('images/unnamed-removebg-preview.png');
   background-size: 145%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -184,6 +185,13 @@ a:hover { color: var(--accent); }
 .carousel-dots { text-align: center; margin-top: 10px; }
 .carousel-dots button { background: rgba(36,73,47,0.18); border: none; width: 10px; height: 10px; border-radius: 50%; margin: 0 6px; cursor: pointer; }
 .carousel-dots button.active { background: var(--leaf-dark); }
+.carousel-item img[src="images/lemonade.png"]{
+  height: auto;
+  object-fit: contain;
+  margin-left: -10px;
+}
+
+
 
 @media (max-width:880px) {
   .carousel-item img { width: 45%; height: auto; max-height: 300px; }
