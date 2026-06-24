@@ -224,6 +224,17 @@ a:hover { color: var(--accent); }
   justify-content: center;
   gap: 14px;
 }
+.carousel-item:has(img) .feature-body {
+  width: 50%;
+}
+.carousel-item:not(:has(img)) {
+  justify-content: center;
+}
+.carousel-item:not(:has(img)) .feature-body {
+  width: 100%;
+  padding: 40px 26px;
+  text-align: center;
+}
 .carousel-item .feature-title {
   font-size: 1.6rem;
   line-height: 1.1;
@@ -234,6 +245,17 @@ a:hover { color: var(--accent); }
   color: #57627b;
   font-size: 1rem;
   line-height: 1.75;
+}
+.feature-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #57627b;
+  font-size: 1rem;
+  line-height: 1.8;
+  list-style-type: disc;
+}
+.feature-list li {
+  margin-bottom: 0.75rem;
 }
 .carousel-btn {
   position: absolute;
