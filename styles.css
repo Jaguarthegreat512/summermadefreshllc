@@ -9,7 +9,7 @@
   --text: #24492f;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap');
 
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; color: var(--text); }
@@ -25,7 +25,7 @@ nav {
   z-index: 1000;
   background: var(--leaf-dark);
   color: rgba(255,208,102,0.95);
-  padding: 16px 18px;
+  padding: 40px 24px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   border: 3px solid var(--sun);
   border-bottom: 3px solid var(--sun);
@@ -50,13 +50,16 @@ nav {
 
 
 /* Hero: softer card with subtle border and texture */
-.hero { padding: 44px 18px; text-align: center; background: linear-gradient(0deg, rgba(253, 255, 112, 0.98) 0%, rgba(201, 255, 194, 0.98) 100%); border-radius: 14px; border: 1px solid rgba(0,0,0,0.12); width: 92%; max-width: 1100px; margin: 16px auto 0; font-family: 'Playfair Display', serif; box-sizing: border-box; }
+.hero { padding: 44px 18px; text-align: center; background: linear-gradient(180deg, rgba(154,215,255,0.95) 0%, rgba(255,255,255,0.95) 100%); border-radius: 14px; border: 1px solid rgba(0,0,0,0.12); width: 92%; max-width: 1100px; margin: 16px auto 0; font-family: 'Playfair Display', serif; box-sizing: border-box; }
 .hero h1 { font-size: 2.2rem; margin: 0 0 0.4rem; color: var(--leaf-dark); letter-spacing: -0.5px; }
 .hero p { margin: 0; color: rgba(36,73,47,0.95); font-family: 'Inter', sans-serif; font-size: 1rem; }
 .hero .hero-cta { margin-top: 18px; }
 
-.btn { display: inline-block; background: linear-gradient(180deg, rgba(47, 122, 69, 0.8) 0%, rgba(31, 90, 51, 0.8) 100%); color: #fff; padding: 12px 20px; border-radius: 999px; text-decoration: none; font-weight: 600; box-shadow: 0 6px 18px rgba(0,0,0,0.12); transition: transform 0.12s, box-shadow 0.12s; touch-action: manipulation; border: 1px solid rgba(0,0,0,0.06); }
-.btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+.btn { display: inline-block; background: linear-gradient(180deg, #9ad7ff 0%, #ff2c4a 100%); color: #fff; padding: 12px 20px; border-radius: 999px; text-decoration: none; font-weight: 600; box-shadow: 0 6px 18px rgba(255,44,74,0.24); transition: transform 0.12s, box-shadow 0.12s; touch-action: manipulation; border: 1px solid rgba(255,255,255,0.35); }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(255,44,74,0.24); }
+
+.btn-secondary { display: inline-block; background: #ff2c4a; color: #fff; padding: 12px 22px; border-radius: 999px; text-decoration: none; font-weight: 700; border: 1px solid rgba(255,255,255,0.45); box-shadow: 0 10px 22px rgba(255,44,74,0.22); transition: transform 0.12s, box-shadow 0.12s; }
+.btn-secondary:hover { transform: translateY(-2px); box-shadow: 0 14px 28px rgba(255,44,74,0.26); }
 
 /* outlined button used on hero */
 .btn-outline { display: inline-block; background: transparent; color: var(--leaf-dark); padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; border: 1px solid rgba(36,73,47,0.14); transition: background 0.12s, transform 0.12s; }
@@ -75,7 +78,7 @@ nav {
 footer {
   background: var(--leaf-dark);
   color: var(--sun);
-  padding: 40px 24px 32px 24px;
+  padding: 40px 24px;
   position: relative;
   margin: 20px 5% 0 5%;
   border-radius: 12px 12px 0 0;
@@ -171,41 +174,158 @@ a:hover { color: var(--accent); }
 }
 
 /* Carousel styles */
-.home-carousel { position: relative; max-width: 1100px; margin: 18px auto; overflow: hidden; border-radius: 12px; }
-.home-carousel { position: relative; max-width: 1100px; margin: 18px auto; overflow: hidden; border-radius: 12px; padding: 12px; box-sizing: border-box; }
-.carousel-track { display: flex; transition: transform 0.6s cubic-bezier(.2,.8,.2,1); will-change: transform; align-items: stretch; }
-.carousel-item { min-width: 100%; flex: 0 0 100%; display: flex; gap: 12px; align-items: stretch; background: #fff; will-change: transform; border: 1px solid rgba(0,0,0,0.08); border-radius: 10px; overflow: hidden; }
-.carousel-item img { width: 50%; height: auto; max-height: 420px; object-fit: cover; display: block; border-radius: 8px 0 0 8px; backface-visibility: hidden; }
-.carousel-item .feature-body { padding: 18px; width: 50%; display: flex; flex-direction: column; justify-content: center; }
-.carousel-item .feature-title { font-size: 1.25rem; }
-.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.7); color: white; border: 2px solid white; width: 50px; height: 50px; border-radius: 999px; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 10; transition: all 0.2s ease; }
-.carousel-btn:hover { background: rgba(0,0,0,0.9); transform: translateY(-50%) scale(1.1); }
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
-.carousel-dots { text-align: center; margin-top: 10px; }
-.carousel-dots button { background: rgba(36,73,47,0.18); border: none; width: 10px; height: 10px; border-radius: 50%; margin: 0 6px; cursor: pointer; }
-.carousel-dots button.active { background: var(--leaf-dark); }
-.carousel-item img[src="images/lemonade.png"]{
+.home-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 18px auto 0;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 16px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(79,184,255,0.18);
+  box-shadow: 0 20px 50px rgba(79,184,255,0.12);
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
+  will-change: transform;
+  align-items: stretch;
+}
+.carousel-item {
+  min-width: 100%;
+  flex: 0 0 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+  will-change: transform;
+  border: 1px solid rgba(79,184,255,0.18);
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 6px;
+}
+.carousel-item img {
+  width: 48%;
+  max-width: 520px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px rgba(79,184,255,0.12);
+  backface-visibility: hidden;
+}
+.carousel-item .feature-body {
+  padding: 24px 26px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+.carousel-item .feature-title {
+  font-size: 1.6rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--leaf-dark);
+}
+.carousel-item .feature-desc {
+  color: #57627b;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.95);
+  color: var(--leaf-dark);
+  border: 1px solid rgba(79,184,255,0.9);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 14px 32px rgba(79,184,255,0.16);
+  z-index: 10;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+.carousel-btn:hover {
+  background: #ffffff;
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 18px 36px rgba(79,184,255,0.2);
+}
+.carousel-btn.prev { left: 12px; }
+.carousel-btn.next { right: 12px; }
+.carousel-dots {
+  text-align: center;
+  margin-top: 16px;
+}
+.carousel-dots button {
+  background: rgba(79,184,255,0.28);
+  border: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.carousel-dots button.active {
+  background: #ff2c4a;
+  transform: scale(1.15);
+}
+.carousel-menu {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+.carousel-menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(79,184,255,0.12);
+  color: #2f3155;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+.carousel-menu-item .menu-item-name {
+  flex: 1 1 auto;
+}
+.carousel-menu-item .menu-item-price {
+  flex: 0 0 auto;
+  color: var(--leaf-dark);
+}
+.carousel-actions {
+  text-align: center;
+  margin: 22px auto 0;
+  width: fit-content;
+}
+.carousel-actions .btn {
+  min-width: 180px;
+}
+.carousel-item img[src="images/lemonade.png"] {
   height: auto;
   object-fit: contain;
   margin-left: -10px;
 }
 
-
-
 @media (max-width:880px) {
-  .carousel-item img { width: 45%; height: auto; max-height: 300px; }
-  .carousel-btn { width: 40px; height: 40px; font-size: 1.2rem; }
+  .carousel-item img { width: 47%; height: auto; max-height: 320px; }
+  .carousel-btn { width: 42px; height: 42px; font-size: 1.3rem; }
 }
 
 @media (max-width:640px) {
   .carousel-item { flex-direction: column; gap: 0; padding: 0; }
-  .carousel-item img { width: 100%; height: auto; max-height: 260px; border-radius: 8px 8px 0 0; }
-  .carousel-item .feature-body { width: 100%; padding: 14px; }
-  .carousel-item .feature-title { font-size: 1.1rem; }
-  .carousel-btn { width: 32px; height: 32px; font-size: 0.9rem; background: rgba(0,0,0,0.6); color: white; border: 1px solid white; top: 12px; transform: none; }
-  .carousel-btn.prev { left: 8px; }
-  .carousel-btn.next { right: 8px; }
+  .carousel-item img { width: 100%; height: auto; max-height: 260px; border-radius: 16px 16px 0 0; }
+  .carousel-item .feature-body { width: 100%; padding: 18px; }
+  .carousel-item .feature-title { font-size: 1.35rem; }
+  .carousel-btn { width: 36px; height: 36px; font-size: 1rem; background: rgba(255,255,255,0.95); color: var(--leaf-dark); border: 1px solid rgba(79,184,255,0.9); top: 14px; transform: none; }
+  .carousel-btn.prev { left: 10px; }
+  .carousel-btn.next { right: 10px; }
   .home-carousel { margin: 14px auto; }
 }
 
@@ -224,7 +344,7 @@ a:hover { color: var(--accent); }
 .btn-outline:hover { background: rgba(47,122,69,0.06); }
 
 /* Home features (small promos under hero) */
-.features { max-width: 1100px; margin: 18px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 0 18px; }
+.features { max-width: 1200px; margin: 18px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 0 18px; }
 .feature-card { background: linear-gradient(180deg,#ffffff, #fffdf8); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); overflow: hidden; display: flex; flex-direction: column; align-items: stretch; border: 1px solid rgba(0,0,0,0.12); }
 .feature-card img { width: 100%; height: 140px; object-fit: cover; display: block; }
 .feature-card .feature-body { padding: 12px; }
@@ -239,10 +359,57 @@ a:hover { color: var(--accent); }
 .admin-only { display: none; }
 .admin-only.show { display: block !important; }
 
+/* Social media buttons */
+.home-buttons {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  background: #fff;
+  border: 2px solid transparent;
+}
+.social-btn svg {
+  width: 100%;
+  height: 100%;
+}
+.social-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+.social-btn--instagram {
+  background: linear-gradient(45deg, #feda75 0%, #fa7e1e 10%, #d92e7f 50%, #9b36b7 90%, #515bd4 100%);
+  border-color: rgba(255,255,255,0.3);
+}
+.social-btn--instagram:hover {
+  box-shadow: 0 15px 35px rgba(249,126,30,0.35);
+}
+.social-btn--facebook {
+  background: #1877F2;
+  border: 3px solid #e8f0fe;
+  border-color: rgba(255,255,255,0.4);
+  color: #fff;
+}
+.social-btn--facebook:hover {
+  background: #165ac7;
+  box-shadow: 0 15px 35px rgba(24,119,242,0.35);
+}
+
 /* Lemonade card special styling */
 .lemonade-card .card-media { position: relative; overflow: hidden; }
 .lemonade-card .card-media img { height: 220px; object-fit: cover; display: block; width: 100%; filter: saturate(1.05) contrast(1.02); }
-.lemonade-card .badge { position: absolute; left: 12px; top: 12px; background: linear-gradient(90deg, rgba(255,208,102,0.95), rgba(255,127,80,0.9)); color: #fff; padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: 0.85rem; box-shadow: 0 6px 18px rgba(34,41,30,0.12); }
+.lemonade-card .badge { position: absolute; left: 12px; top: 12px; background: linear-gradient(90deg, rgba(255,208,102,0.95), rgba(255,127,80,0.9)); color: #fff; padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: 0.85rem; box-shadow: 0 6px 18px rgba(34,41,30,0.12); font-family: 'Poppins', sans-serif; }
 .lemonade-card .card-body { padding-top: 12px; }
 
 .big-text {
