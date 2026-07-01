@@ -9,31 +9,89 @@
 </head>
 <body>
   <div class="wrapper">
-    <nav>
-      <div class="nav-inner">
-        <div class="brand"><a href="index.html">Summer Made Fresh</a></div>
-        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
-        <div class="nav-links">
-          <a href="index.html">HOME</a>
-          <a href="menu.html">MENU</a>
-          <!-- removed MEDIA link -->
-          <a href="book-an-event.html">BOOK AN EVENT</a>
-          <a href="catering.html">CONTACT US</a>
+    <header class="page-header">
+      <nav>
+        <div class="nav-inner">
+          <div class="brand"><a href="index.html" class="brand-link">
+            <img src="images/unnamed.jpg" alt="Summer Made Fresh logo" class="brand-logo">
+            <span>Summer Made Fresh</span>
+          </a></div>
+          <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+          <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="menu.html">VIEW MENU</a>
+            <a href="book-an-event.html">BOOK AN EVENT</a>
+            <a href="catering.html">CONTACT</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <section class="hero home"></section>
+      <section class="hero home" aria-label="Summer Made Fresh food truck">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <p class="hero-kicker">Fresh, fun, and made to share</p>
+            <h1>Sip. Snack. Smile!!</h1>
+            <p>Refreshing lemonade, crispy favorites, and delicious comfort food from our food truck.</p>
+            <div class="hero-actions">
+              <a class="btn" href="menu.html">View Menu</a>
+              <a class="btn btn-secondary" href="catering.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
 
-    <h1 class="big-text">Sip. Snack. Smile!!</h1>
+    <section class="features" aria-label="Summer Made Fresh favorites">
+      <article class="feature-card">
+        <img src="images/lemonade.png" alt="Lemonade" loading="lazy">
+        <div class="feature-body">
+          <div class="feature-title">Lemonade Flavors</div>
+          <ul class="feature-list">
+            <li>Classic Lemonade</li>
+            <li>Strawberry Lemonade</li>
+            <li>Raspberry Lemonade</li>
+            <li>Blackberry Lemonade</li>
+            <li>Watermelon Lemonade</li>
+            <li>Cucumber-Mint Lemonade</li>
+          </ul>
+        </div>
+      </article>
 
-    <section class="content">
+      <article class="feature-card">
+        <img src="images/chicken and fries.png" alt="Chicken & Fries" loading="lazy">
+        <div class="feature-body">
+          <div class="feature-title">Savory Favorites</div>
+          <ul class="feature-list">
+            <li>Chicken & Fries</li>
+            <li>Empanadas</li>
+            <li>Chicken Sandwiches</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <img src="images/potato tornado.png" alt="Tornado Potato" loading="lazy">
+        <div class="feature-body">
+          <div class="feature-title">Crispy Picks</div>
+          <ul class="feature-list">
+            <li>Tornado Potato</li>
+            <li>Wings</li>
+            <li>Fried Raviolis</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <div class="features-cta">
+      <a class="btn" href="menu.html">View Full Menu</a>
+    </div>
+
+    <section class="content about-section">
       <h2>About us.</h2>
       <p>Summer Made Fresh is a local, family-owned food trailer built around one simple idea: great food and refreshing lemonade made with care. We’re fully insured and proud to serve our community with mouthwatering bites, fresh drinks, and a friendly atmosphere wherever we go. Whether it’s a small gathering or a big event, we bring the same energy, good vibes, and attention to quality every time. Our goal is to make every stop feel like summer — fresh, fun, and welcoming for everyone. From quick refreshments to delicious eats, Summer Made Fresh is here to make your day better.</p>
       <hr>
-      <p style="text-align: center;">Check out more information on our social media below 👇</p>
+      <p class="social-intro">Check out more information on our social media below 👇</p>
 
-      <!-- Social Media Buttons -->
       <div class="home-buttons">
         <a href="https://www.instagram.com/summermadefresh/" target="_blank" class="social-btn social-btn--instagram" aria-label="Follow us on Instagram">
           <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
@@ -47,71 +105,6 @@
         </a>
       </div>
     </section>
-
-    <section class="features">
-      <div class="home-carousel" aria-roledescription="carousel" tabindex="0">
-        <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
-        <div class="carousel-track">
-          <div class="carousel-item">
-            <img src="images/lemonade.png" alt="Lemonade" loading="lazy">
-            <div class="feature-body">
-              <div class="feature-title">Lemonade Flavors</div>
-              <ul class="feature-list">
-                <li>Classic Lemonade</li>
-                <li>Strawberry Lemonade</li>
-                <li>Raspberry Lemonade</li>
-                <li>Blackberry Lemonade</li>
-                <li>Watermelon Lemonade</li>
-                <li>Cucumber-Mint Lemonade</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="images/chicken and fries.png" alt="Chicken & Fries" loading="lazy">
-            <div class="feature-body">
-              <div class="feature-title">Savory Favorites</div>
-              <ul class="feature-list">
-                <li>Chicken & Fries</li>
-                <li>Empanadas</li>
-                <li>Chicken Sandwiches</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="images/potato tornado.png" alt="Tornado Potato" loading="lazy">
-            <div class="feature-body">
-              <div class="feature-title">Crispy Picks</div>
-              <ul class="feature-list">
-                <li>Tornado Potato</li>
-                <li>Wings</li>
-                <li>Fried Raviolis</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="images/empanana.png" alt="Empanadas" loading="lazy">
-            <div class="feature-body">
-              <div class="feature-title">Comfort Classics</div>
-              <ul class="feature-list">
-                <li>Fries</li>
-                <li>Hot Dogs</li>
-                <li>Mozzarella Sticks</li>
-                <li>Cheeseburgers</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-btn next" aria-label="Next">&#8250;</button>
-        <div class="carousel-dots" aria-hidden="false"></div>
-        <div class="carousel-actions">
-          <a class="btn" href="menu.html">Show full menu</a>
-        </div>
-      </div>
-    </section>
-
   </div> <!-- end wrapper -->
 
   <!-- Image Modal -->
